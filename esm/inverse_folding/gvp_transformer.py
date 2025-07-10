@@ -321,14 +321,14 @@ class GVPTransformerModel(nn.Module):
             sampled_tokens = sampled_tokens.to(device)
 
         classifier_thermo = get_classifier(class_size=2,
-                                    checkpoint_path=f'{current_dir}/discriminator_param/classifier_head_epoch_last.pt',
+                                    checkpoint_path=f'{current_dir}/discriminator_param/classifier_head_stability_epoch_last.pt',
                                     discriminator_type='regression',
                                     output_type='classification')
         classifier_thermo.to('cuda')
         classifier_thermo.eval()
 
         classifier_solu = get_classifier(class_size=2,
-                                           checkpoint_path=f'{current_dir}/discriminator_param_solubility/classifier_head_epoch_last.pt',
+                                           checkpoint_path=f'{current_dir}/discriminator_param/classifier_head_solubility_epoch_last.pt',
                                            discriminator_type='classification',
                                            output_type='classification')
         classifier_solu.to('cuda')
