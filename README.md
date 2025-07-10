@@ -31,7 +31,8 @@ command from the `examples/inverse_folding` directory:
 
 
 ```
-python sample_sequences.py data/5YH2.pdb \
+python sample_sequences.py \
+    --pdbfile data/5YH2.pdb \
     --chain C --temperature 1 --num-samples 3 \
     --outpath output/sampled_sequences.fasta \
     --loss_type Solubility \
