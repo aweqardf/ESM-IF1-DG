@@ -13,6 +13,7 @@ conda activate inverse
 conda install pytorch cudatoolkit=11.3 -c pytorch
 conda install pyg -c pyg -c conda-forge
 conda install pip
+conda install pandas biopython
 pip install biotite
 pip install git+https://github.com/facebookresearch/esm.git
 ```
