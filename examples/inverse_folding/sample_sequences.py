@@ -14,9 +14,7 @@ from pathlib import Path
 import torch
 import sys
 
-from esm.inverse_folding.util import surface_mask
-
-sys.path.insert(0,'../../esm/')
+sys.path.insert(0,'../../')
 import esm
 
 import esm.inverse_folding
