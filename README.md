@@ -37,7 +37,7 @@ python sample_sequences.py \
     --chain C --temperature 1 --num-samples 3 \
     --outpath output/sampled_sequences.fasta \
     --loss_type Solubility \
-    --stepsize 0.2 \
+    --stepsize 0.1 \
     --num_iterations 2 \
     --kl_scale 0.5
 ```
