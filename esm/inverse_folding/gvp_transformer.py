@@ -461,7 +461,7 @@ def add_tensors(a, b):
     return result
 
 def get_classifier(class_size=2,
-                   checkpoint_path=f'{current_dir}/discriminator_param/classifier_head_epoch_91.pt',
+                   checkpoint_path=f'{current_dir}/discriminator_param/classifier_head_solubility_epoch_last.pt',
                    discriminator_type='regression',
                    output_type='classification'):
     discriminator = Discriminator(class_size=class_size,discriminator_type=discriminator_type,output_type=output_type)
