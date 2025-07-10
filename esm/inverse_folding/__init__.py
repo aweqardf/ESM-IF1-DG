@@ -6,4 +6,4 @@
 from . import gvp_transformer
 from . import util
 from . import multichain_util
-from . import discriminator_train
+#from . import discriminator_train
