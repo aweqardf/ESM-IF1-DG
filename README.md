@@ -37,5 +37,5 @@ python sample_sequences.py data/5YH2.pdb \
     --loss_type Solubility \
     --stepsize 0.2 \
     --num_iterations 2 \
-    --kl_scale 0.5 \
+    --kl_scale 0.5
 ```
